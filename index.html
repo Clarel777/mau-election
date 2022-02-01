@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Election with three Candidates</title>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+</head>
+<body>
+    <h1>This is my Election Dapp</h1>
+    <div id = "is-election-closed"></div>
+    <br>
+    <div id = "mm-detected"></div>
+    <button id = "mm-connect">Connect to Metamask</button>
+    <br>
+    
+    <br>
+    <button id = "vote-status" type="submit">Get Updated Vote Status</button>
+    <div id = "vote-update"></div>
+    
+    <p><input id = "vote-value" type="number" placeholder="Cast your vote">
+    <button id = "input-vote" type="submit">Submit Vote</button></p>
+
+    <p>
+        <div>
+        <button id = "close-election" type="submit">Close Election</button>
+        </div>
+    </p>
+    <div id = "mm-current-account"></div>   
+
+</body>
+<script src ="dapp.js"></scriptsrc></script>
+</html>

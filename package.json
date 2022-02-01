@@ -1,5 +1,24 @@
 {
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
   "dependencies": {
-    "dotenv": "^15.0.0"
-  }
+    "@openzeppelin/contracts": "^4.4.2",
+    "@truffle/hdwallet-provider": "^2.0.1",
+    "dotenv": "^15.0.0",
+    "fs": "^0.0.1-security"
+  },
+  "name": "mau-election",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
 }
