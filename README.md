@@ -46,6 +46,11 @@ The dependencies to the project are as follows:
 8. If a user, other than the owner of the smart contract (check this account when migrating the contract) tries to close the election, it will result in a failure.
 9. Once the "commissioner" clicks on the "Close Election", the final results will be displayed and no one can vote anymore.
 
+**6. Demo Website of the app:**
+
+A demo website of the App is provided at https://clarel777.github.io/blockchain-developer-bootcamp-final-project/. 
+
+
 
 
 
