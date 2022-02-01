@@ -1,4 +1,4 @@
-Brief Overview:
+**Project Overview**:
 
 This project builds a basic Ethereum-based Election system. The candidates are instantiated with the constructor and a commissioner (the owner of the contract) is assigned. Only the commissioner can close the election and declare the final results. Voters are allowed to vote only once.Furthermore, no one can vote once the election has been declared as closed. The project can be run on the local blockchain with Ganache or with the Ropsten test network. Note that the project is based on vanilla javascript. Future editions can make use of React.
 
