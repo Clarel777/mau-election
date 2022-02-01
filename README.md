@@ -1,45 +1,40 @@
-**Project Overview**:
+**1. Project Overview:**
 
-This project builds a basic Ethereum-based Election system. The candidates are instantiated with the constructor and a commissioner (the owner of the contract) is assigned. Only the commissioner can close the election and declare the final results. Voters are allowed to vote only once.Furthermore, no one can vote once the election has been declared as closed. The project can be run on the local blockchain with Ganache or with the Ropsten test network. Note that the project is based on vanilla javascript. Future editions can make use of React.
+This project builds a basic Ethereum-based Election system. The candidates are instantiated with the constructor and a commissioner (the owner of the contract) is assigned. Only the commissioner can close the election and declare the final results. Voters are allowed to vote only once. Furthermore, no one can vote once the election has been declared as closed. The project can be run on the local blockchain with Ganache or with the Ropsten test network. Note that the project is based on vanilla javascript. Future editions can make use of React.
 
 The name MauElection is used to represent Mauritius Election. Eventually, the code can be expanded to represent the election system of the country. But this is a long way ahead!
 
-Dependencies:
+**2. Dependencies:**
 
 The dependencies to the project are as follows:
-
-1. npm install (this install the node modules required)
-2. npm install truffle (to install the truffle development environment)
-3. npm install dotenv (to use the .env file to store the Infura API key and the seed phrase). 
-4. npm install @openzeppelin/contracts (this will help to use the Ownable contract from OpenZeppelin) 
-5. npm install @truffle/hdwallet-provider@2.0.1 (to provide access for the ropsten network. Using version 2.0.2 caused a bug. See https://stackoverflow.com/questions/70911092/truffle-migrations-cb-is-not-a-function)
-6. npm install fs (to use the toString() function to retrieve the seed phrase from the .env file)
+1. `npm install` (this install the node modules required)
+2. `npm install truffle` (to install the truffle development environment)
+3. `npm install dotenv` (to use the .env file to store the Infura API key and the seed phrase). 
+4. `npm install @openzeppelin/contracts` (this will help to use the Ownable contract from OpenZeppelin) 
+5. `npm install @truffle/hdwallet-provider@2.0.1` (to provide access for the ropsten network. Using version 2.0.2 caused a bug. See https://stackoverflow.com/questions/70911092/truffle-migrations-cb-is-not-a-function)
+6. `npm install fs` (to use the toString() function to retrieve the seed phrase from the .env file)
 7. Install the Ganache UI at https://trufflesuite.com/ganache/ (to be used as a local Blockchain)
 8. Install the Metamask extension to the browser (to be used as Wallet)
 
-Compiling, testing and migrating the smart contract to the local blockchain:
+**3. Compiling, testing and migrating the smart contract to the local blockchain:**
 
 1. Ensure that ganache is properly, installed and that the truffle-config.js file is properly linked to a ganache workspace.
-
 2. Use the following commands:
+- `truffle compile`: to check if all the dependencies are properly installed and work well
+- `truffle test`: to check whether the contract passes all the test defined
+- `truffle migrate` or `truffle migrate --reset` to migrate the smart contract to ganache
+- Copy the contract address to the MauElectionAddress variable in dapp.js
 
-truffle compile: to check if all the dependencies are properly installed and work well
-truffle test: to check whether the contract passes all the test defined
-truffle migrate or truffle migrate --reset to migrate the smart contract to ganache
-copy the contract address to the MauElectionAddress variable in dapp.js
-
-Migrating to the Ropsten test network:
+**4. Migrating to the Ropsten test network:**
 
 1. Ensure that a ropsten account is funded (by using a ropsten faucet) and create additional accounts and fund them as well. 5 accounts is considered enough for the test. Each account should have some ether. 
 2. Ensure that the .env file is populated with the following:
-INFURA_API_KEY= Your infura key
-MNEMONIC="list of twelve phrases to be added here for it to work"
-
-3. Use the following command: truffle migrate --network ropsten or truffle migrate --network ropsten --reset for a fresh deployment.
-
+- INFURA_API_KEY= Your infura key
+- MNEMONIC="list of twelve phrases to be added here for it to work"
+3. Use the following command: `truffle migrate --network ropsten` or `truffle migrate --network ropsten --reset` for a fresh deployment.
 4. Copy the contract address to the MauElectionAddress variable in dapp.js
 
-Running the App:
+**5. Running the App:**
 
 1. It is advised to use developper tools of the browser to show the console. This can be very helpful in debugging
 2. The main html file is index.html. Launching the file should bring up the App page. 
