@@ -18,7 +18,7 @@ The dependencies to the project are as follows:
 
 **3. Compiling, testing and migrating the smart contract to the local blockchain:**
 
-1. Ensure that ganache is properly, installed and that the truffle-config.js file is properly linked to a ganache workspace.
+1. Ensure that ganache is properly, installed and that the truffle-config.js file is properly linked to a ganache workspace at port 8545.
 2. Use the following commands:
 - `truffle compile`: to check if all the dependencies are properly installed and work well
 - `truffle test`: to check whether the contract passes all the test defined
