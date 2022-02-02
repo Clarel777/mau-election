@@ -50,6 +50,9 @@ The dependencies to the project are as follows:
 
 A demo website of the App is provided at https://clarel777.github.io/blockchain-developer-bootcamp-final-project/. 
 
+**7. My public Ethereum Account:**
+0xba85Efb74D2ED29Bd64C4301337b06E2345eA6B5
+
 
 
 
