@@ -6,7 +6,7 @@ const web3 = new Web3(window.ethereum);
 //const MauElectionAddress = "0xe4cC38D862339d7e383828cF95f0A19a478aF194";
 
 //ropsten address
-const MauElectionAddress = "0xE93F755dD136E097cF15b143f560d2a5f648a8F4"
+const MauElectionAddress = "0x395cc743fFb6Dd2517E9F3A806B960B31EaAdB01"
 
 const MauElectionABI = [
   {

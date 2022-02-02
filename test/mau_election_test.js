@@ -61,7 +61,7 @@ contract("MauElection", function (/* accounts */) {
   });
 
   it("prevents a voter from voting twice", async function () {
-
+    let num = 0;
     //if the two accounts are different, they will be able to vote
     //and the test will fail to fail. Hence the two accounts must be the same 
     //to check whether the same account to vote twice.

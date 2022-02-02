@@ -18,12 +18,6 @@ contract MauElection is Ownable {
     ///@dev There are 21 constituencies in Mauritius. Results can be given for each constituency.
   }
 
-  
-  
-
-  // voted event
-  event votedEvent (uint indexed _candidateId);
-
   //Store the number of candidates
   uint public candidatesCount;
 
@@ -56,7 +50,7 @@ contract MauElection is Ownable {
   }
 
   function vote (uint _candidateId) public {
-
+        //require that the election is not closed
         require(electionOff == false);
 
         // Require that the voter has not voted before
@@ -68,9 +62,8 @@ contract MauElection is Ownable {
         // Update the candidate vote Count
         candidates[_candidateId].voteCount ++;
 
-        // Record that voter has voted and emit a voted event
-        voters[msg.sender] = true;
-        emit votedEvent(_candidateId);
+        // Record that voter has voted 
+        voters[msg.sender] = true;       
     }
 
     ///@dev the function closeElection() can be implemented
